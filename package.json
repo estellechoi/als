@@ -11,8 +11,9 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint",
-    "test": "npx hardhat test",
-    "compile": "npx hardhat compile --show-stack-traces"
+    "test": "npx hardhat test --show-stack-traces",
+    "compile": "npx hardhat compile --show-stack-traces",
+    "deploy": "npx hardhat run scripts/script.ts"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
@@ -33,5 +34,8 @@
     "husky": "^7.0.4",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }
