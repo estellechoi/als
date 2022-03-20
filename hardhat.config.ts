@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle'
+import '@typechain/hardhat'
 import dotenv from 'dotenv'
 import { HardhatUserConfig, task } from 'hardhat/config'
 

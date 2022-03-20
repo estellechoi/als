@@ -55,6 +55,17 @@ To deploy, you should send RINK(Fake ETH) into the address that's going to make 
 
 <br />
 
+## 4. Get auto-generated TypeScript bindings for contracts
+
+Execute the below and get the type artifacts. See the [TypeChain README](https://github.com/dethcrypto/TypeChain/tree/master/packages/hardhat) and [Type-safe smart contract interactions](https://hardhat.org/guides/typescript.html#type-safe-smart-contract-interactions).
+
+```zsh
+# npx hardhat compile --show-stack-traces
+yarn compile
+```
+
+<br />
+
 ---
 
 ### References
