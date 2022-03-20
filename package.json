@@ -9,7 +9,7 @@
     "url": "https://github.com/estellechoi/als.git"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install && chmod ug+x .husky/*",
     "lint": "eslint",
     "test": "npx hardhat test --show-stack-traces",
     "compile": "npx hardhat compile --show-stack-traces",
