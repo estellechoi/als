@@ -18,4 +18,5 @@ npx hardhat help
 
 ### References
 
-- [Setting up a project](https://hardhat.org/guides/project-setup.html)
+- [Setting up a project | Hardhat](https://hardhat.org/guides/project-setup.html)
+- [TypeScript Support | Hardhat](https://hardhat.org/guides/typescript.html)
