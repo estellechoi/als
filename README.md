@@ -19,7 +19,7 @@ RINKEBY_PRIVATE_KEY=000000000000000000000000000000000000000000000000000000000000
 
 ## 2. Configure the networks you will use in Hardhat config file
 
-Unless setting the `defaultNetwork`, the built-in hardhat network will be used by default. For more details for networks configuration, see [Deploying to remote networks](https://hardhat.org/tutorial/deploying-to-a-live-network.html#deploying-to-remote-networks).
+Unless setting the `defaultNetwork`, the built-in hardhat network will be used by default. For more details about networks configuration, see [Deploying to remote networks](https://hardhat.org/tutorial/deploying-to-a-live-network.html#deploying-to-remote-networks).
 
 ```typescript
 // hardhat.config.ts
