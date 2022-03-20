@@ -47,7 +47,7 @@ export default config
 
 <br />
 
-## 3. send RINK(Fake ETH)
+## 3. Send RINK(Fake ETH)
 
 To deploy, you should send RINK(Fake ETH) into the address that's going to make the deployment. You can get some ETH for the Rinkeby testnet following this link:
 
