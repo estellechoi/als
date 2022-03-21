@@ -49,8 +49,9 @@ export default config
 
 ## 3. Send RINK(Fake ETH)
 
-To deploy, you should send RINK(Fake ETH) into the address that's going to make the deployment. You can get some ETH for the Rinkeby testnet following this link:
+To deploy, you should send RINK(Fake ETH) into the address that's going to make the deployment. You can get some ETH for the Rinkeby testnet following those links:
 
+- [Request testnet LINK](https://faucets.chain.link/rinkeby)
 - [Rinkeby Authenticated Faucet](https://faucet.rinkeby.io/)
 
 <br />
