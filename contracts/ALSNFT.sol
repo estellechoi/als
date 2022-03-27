@@ -1,28 +1,30 @@
-//SPDX-License-Identifier: UNLICENSED
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
+
+// import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract ALSNFT is ERC721URIStorage, Ownable {
-    using Counters for Counters.Counter;
+contract ALSNFT is ERC721URIStorage, ERC165, Ownable {
+    // using Counters for Counters.Counter;
 
-    Counters.Counter private tokenIds;
+    // default: 0, see https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Counters.sol
+    // Counters.Counter private tokenIds;
 
     constructor() ERC721("Alice Loves Sea NFT", "ALS") {
-        _transferOwnership(_msgSender());
     }
 
     function mint(
-        address _toAddr,
+        address _to,
         uint256 _tokenId,
         string memory _tokenURI
     ) public onlyOwner returns (uint256) {
         // tokenIds.increment(); // token ids created in order
-        uint256 newItemId = _tokenId;
-        _mint(_toAddr, newItemId);
-        _setTokenURI(newItemId, _tokenURI);
-        return newItemId;
+        uint256 tokenId = _tokenId;
+        _mint(_to, tokenId);
+        _setTokenURI(tokenId, _tokenURI);
+        return tokenId;
     }
 }

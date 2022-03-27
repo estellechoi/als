@@ -222,7 +222,7 @@ export interface ALSNFT extends BaseContract {
     ): Promise<[boolean]>;
 
     mint(
-      _toAddr: string,
+      _to: string,
       _tokenId: BigNumberish,
       _tokenURI: string,
       overrides?: Overrides & { from?: string | Promise<string> }
@@ -307,7 +307,7 @@ export interface ALSNFT extends BaseContract {
   ): Promise<boolean>;
 
   mint(
-    _toAddr: string,
+    _to: string,
     _tokenId: BigNumberish,
     _tokenURI: string,
     overrides?: Overrides & { from?: string | Promise<string> }
@@ -386,7 +386,7 @@ export interface ALSNFT extends BaseContract {
     ): Promise<boolean>;
 
     mint(
-      _toAddr: string,
+      _to: string,
       _tokenId: BigNumberish,
       _tokenURI: string,
       overrides?: CallOverrides
@@ -508,7 +508,7 @@ export interface ALSNFT extends BaseContract {
     ): Promise<BigNumber>;
 
     mint(
-      _toAddr: string,
+      _to: string,
       _tokenId: BigNumberish,
       _tokenURI: string,
       overrides?: Overrides & { from?: string | Promise<string> }
@@ -597,7 +597,7 @@ export interface ALSNFT extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     mint(
-      _toAddr: string,
+      _to: string,
       _tokenId: BigNumberish,
       _tokenURI: string,
       overrides?: Overrides & { from?: string | Promise<string> }
